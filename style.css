@@ -1,7 +1,7 @@
 /* UNIVERSAL SELECTOR */
 * {
-    margin: 0; 
-    padding: 0; 
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
@@ -15,7 +15,7 @@ html {
 
 body {
     background-color: black;
-    color: pink; 
+    color: pink;
     font-family: 'Comic Sans MS';
     text-align: center;
     /* padding-top: 70px; */
@@ -25,7 +25,7 @@ body {
 
 /* GROUP SELECTOR */
 h2 {
-    color: rgb(255, 192, 249); 
+    color: rgb(255, 192, 249);
 }
 
 p {
@@ -52,7 +52,7 @@ header {
 } */
 
 ul {
-    display: flex; 
+    display: flex;
     list-style: none;
     /* padding: 0; */
     /* margin: 0; */
@@ -83,9 +83,10 @@ a {
 
 }
 
-a:hover, a:focus {
+a:hover,
+a:focus {
     background-color: #cc91f4;
-    color: white; 
+    color: white;
     box-shadow: 0 0 15px rgba(75, 53, 91, 0.6);
     transform: scale(1.15);
 }
@@ -96,7 +97,7 @@ a:active {
     background-color: #c282ed;
     color: rgb(135, 128, 128);
     box-shadow: 0 0 15px rgba(75, 53, 91, 0.6);
-    transform: scale(1.15);  
+    transform: scale(1.15);
 }
 
 
@@ -115,7 +116,8 @@ button {
     transition: all 0.3s ease-in-out;
 }
 
-button:hover, button:focus {
+button:hover,
+button:focus {
     background-color: rgb(208, 111, 187);
     color: white;
     transform: scale(1.1);
@@ -182,7 +184,7 @@ section {
 #about {}
 
 
-#skills > div {
+#skills>div {
     display: flex;
     justify-content: center;
     gap: 15px;
@@ -208,7 +210,7 @@ section {
 
 
 
-#projects > div {
+#projects>div {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -234,43 +236,56 @@ section {
 
 
 
+.projectsLink, .projectsLink:hover, .projectsLink:focus {
+    background-color: transparent;
+    color: white;
+    border: none;
+    box-shadow: none;   
+    border-width: 0px;
+}
+
+
+
+
+
 
 @media (max-width: 600px) {
-    #skills > div,
-    #projects > div {
+
+    #skills>div,
+    #projects>div {
         flex-direction: column;
         width: 95%;
     }
 }
 
 
-#contact > div {
-    background-color: rgba(255, 255, 255, 0.15);  
+#contact>div {
+    background-color: rgba(255, 255, 255, 0.15);
     backdrop-filter: blur(20px);
     border-radius: 20px;
     border: 1px solid rgba(255, 255, 255, 0.3);
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
-    padding: 20px;  
+    padding: 20px;
     margin-top: 20px;
     width: 90%;
     transition: all 0.3s ease-in-out;
 }
 
 
-#contact > div > a {
+#contact>div>a {
     text-decoration: none;
     color: white;
 }
 
 
-#contact > div:hover {
+#contact>div:hover {
     transform: scale(1.05);
     box-shadow: 0 0 10px rgba(217, 169, 248, 0.5);
 }
 
 
 
-footer > div {
+footer>div {
     background-color: #d9a9f8;
     color: black;
     text-align: center;
@@ -279,8 +294,5 @@ footer > div {
     padding-top: 15px;
     padding-bottom: 20px;
 
-    
+
 }
-
-
-
