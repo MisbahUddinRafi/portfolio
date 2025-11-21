@@ -1,0 +1,286 @@
+/* UNIVERSAL SELECTOR */
+* {
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box;
+}
+
+
+
+/* ELEMENT SELECTORS */
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+    background-color: black;
+    color: pink; 
+    font-family: 'Comic Sans MS';
+    text-align: center;
+    /* padding-top: 70px; */
+}
+
+
+
+/* GROUP SELECTOR */
+h2 {
+    color: rgb(255, 192, 249); 
+}
+
+p {
+    padding-top: 20px;
+    padding-bottom: 30px;
+}
+
+header {
+    background-color: #d9a9f8;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    /* padding-left: 25px; */
+    /* padding-right: 25px; */
+    position: fixed;
+    width: 100%;
+    top: 0;
+}
+
+
+/* nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} */
+
+ul {
+    display: flex; 
+    list-style: none;
+    /* padding: 0; */
+    /* margin: 0; */
+    /* align-items: center; */
+    justify-content: center;
+
+}
+
+
+/* li{
+    margin: 8px;
+    transition: all 0.3s ease-in-out;
+} */
+
+
+
+a {
+    color: black;
+    padding: 10px;
+    padding-inline: 25px;
+    border: 0;
+    border-radius: 15px;
+    font-weight: bold;
+    font-size: 20px;
+    text-decoration: none;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+
+}
+
+a:hover, a:focus {
+    background-color: #cc91f4;
+    color: white; 
+    box-shadow: 0 0 15px rgba(75, 53, 91, 0.6);
+    transform: scale(1.15);
+}
+
+
+
+a:active {
+    background-color: #c282ed;
+    color: rgb(135, 128, 128);
+    box-shadow: 0 0 15px rgba(75, 53, 91, 0.6);
+    transform: scale(1.15);  
+}
+
+
+
+
+button {
+    border-radius: 15px;
+    background-color: pink;
+    color: black;
+    border: 0px;
+    font-size: medium;
+    font-weight: bold;
+    font-family: 'Comic Sans MS';
+    padding: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+button:hover, button:focus {
+    background-color: rgb(208, 111, 187);
+    color: white;
+    transform: scale(1.1);
+    cursor: pointer;
+    box-shadow: 0 0 15px rgba(217, 169, 248, 0.7);
+}
+
+
+
+button:active {
+    background-color: rgb(208, 111, 187);
+    color: rgb(160, 152, 152);
+    transform: scale(1.15);
+}
+
+
+
+
+
+
+section {
+    padding-top: 100px;
+    height: 100vh;
+    max-width: 900px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    font-size: large;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+
+
+
+#hero {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-size: large;
+    justify-content: center;
+    align-items: center;
+    animation: fadeIn 1.2s ease-in-out;
+}
+
+
+
+
+#about {}
+
+
+#skills > div {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+
+.skillsInner {
+    background-color: rgba(255, 170, 255, 0.1);
+    color: white;
+    border-radius: 20px;
+    padding: 15px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    align-content: center;
+    transition: all 0.3s ease-in-out;
+}
+
+.skillsInner:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 10px rgba(217, 169, 248, 0.5);
+}
+
+
+
+#projects > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 20px;
+    width: 75%;
+}
+
+.projectsInner {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(255, 170, 255, 0.1);
+    color: white;
+    border-radius: 20px;
+    padding: 15px;
+    transition: all 0.3s ease-in-out;
+}
+
+.projectsInner:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 10px rgba(217, 169, 248, 0.5);
+}
+
+
+
+
+@media (max-width: 600px) {
+    #skills > div,
+    #projects > div {
+        flex-direction: column;
+        width: 95%;
+    }
+}
+
+
+#contact > div {
+    background-color: rgba(255, 255, 255, 0.15);  
+    backdrop-filter: blur(20px);
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
+    padding: 20px;  
+    margin-top: 20px;
+    width: 90%;
+    transition: all 0.3s ease-in-out;
+}
+
+
+#contact > div > a {
+    text-decoration: none;
+    color: white;
+}
+
+
+#contact > div:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 10px rgba(217, 169, 248, 0.5);
+}
+
+
+
+footer > div {
+    background-color: #d9a9f8;
+    color: black;
+    text-align: center;
+    font-size: x-large;
+    height: 15vh;
+    padding-top: 15px;
+    padding-bottom: 20px;
+
+    
+}
+
+
+
